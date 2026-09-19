@@ -33,7 +33,7 @@ jobs:
           rm -rf build-project
           mkdir build-project
           unzip -q NammaThiruppur.zip -d build-project
-
+          chmod -R u+rwX build-project
       - name: Build User App
         working-directory: build-project/NammaThiruppur
         run: |
